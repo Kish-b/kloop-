@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    font-family: "inter";
+    
+}
+
+a:link,
+a:visited,
+.head-nav {
+
+    text-decoration: none;
+
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(17, 15, 15, 0.237);
+backdrop-filter:blur(10px);
+
+}
+
+.header {
+    /* */
+
+
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 16px 20px;
+
+}
+
+
+.headder-logo {
+    width: 80px;
+    max-height: 48px;
+    
+}
+
+.all-nav-btn {
+    display: flex;
+    gap: 15px;
+}
+
+.head-nav {
+    padding: 12px 15px;
+    text-align: center;
+    background-color: #0000d380;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    border-radius: 50%;
+    font-weight: 400;
+}
+
+
+
+.hambergar{
+    display: none;
+
+
+}
+
+
+.search{
+    display: flex;
+   
+}
+
+
+input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+
+    font-size: 17px;
+    border-radius: 10px  0  0 10px ;
+  }
+
+  button {
+    float: right;
+    padding: 6px 10px;
+
+    background: #ddd;
+    font-size: 17px;
+    border-radius: 0 10px 10px 0 ;
+    border: none;
+    cursor: pointer;
+  }
+
+  section{
+    margin: auto;
+display: flex;
+    margin-top: 200px;
+    justify-content: center;
+width: 80%;
+   
+  }
+
+#first {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+gap: 30px;
+justify-content: space-between;
+}
+
+
+iframe {
+   
+
+}
+
+@media (max-width: 768px) {
+
+    .all-nav-btn {
+        display: none;
+
+    }
+
+ 
+    .all-nav-btn.active {
+        display: flex;
+    }
+
+    input[type=text]{
+display: none;
+    }
+    button {
+        border-radius:50%;
+    }
+
+    .hambergar{
+        width: 35px;
+        height: 35px;
+        background-color: rgba(39, 39, 42, 0.3);
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        gap: 4px;
+    }
+
+
+    .bar{
+        background-color: rgb(205, 201, 201);
+        text-align: center;
+        width: 18px;
+        height: 2px;
+    }  
+
+    #first {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+
+        }
+
+}
